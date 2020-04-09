@@ -21,7 +21,7 @@ reactDom.render(
 	<ApolloProvider client={client}>
 		<App />
 	</ApolloProvider>,
-	document.querySelector('LifePurposeApp')
+	document.querySelector('demoapp')
 )
 
 console.log('Welcome!')
