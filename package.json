@@ -1,0 +1,26 @@
+{
+	"name": "demo.app",
+	"version": "1.0.0",
+	"main": "api/index.js",
+	"author": "Martin Adams <heymartinadams@users.noreply.github.com>",
+	"license": "MIT",
+	"homepage": "https://www.ecstatic.com",
+	"repository": {
+		"url": "https://github.com/ecstaticapps/demo.app.git",
+		"type": "git"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build"
+	},
+	"dependencies": {
+		"apollo-boost": "^0.4.7",
+		"react": "^16.12.0",
+		"react-apollo": "^3.1.4",
+		"react-dom": "^16.12.0"
+	},
+	"devDependencies": {
+		"graphql": "^14.6.0",
+		"react-scripts": "^3.4.1"
+	}
+}

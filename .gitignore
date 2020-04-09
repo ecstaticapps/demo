@@ -1,0 +1,16 @@
+# General
+.env
+.DS_Store
+node_modules/
+# NPM
+.npm
+npm-debug.*
+# Logs
+*.log
+logs/
+# Now
+.now
+# Prisma
+migrations
+# Other
+temp.md
