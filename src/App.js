@@ -9,7 +9,14 @@ export default props => {
 	const { loading, error, data } = useQuery(USERS)
 
 	if (loading) return 'Loading...'
-	if (error) return `Error! ${error.message}`
+	if (error)
+		return (
+			<div
+				style={{ backgroundColor: '#ff0000', color: '#ffffff', width: '300px', padding: '20px' }}
+			>
+				Error! ${error.message}
+			</div>
+		)
 
 	return (
 		<div style={{ backgroundColor: '#6a007a', color: '#ffffff', width: '300px', padding: '20px' }}>
