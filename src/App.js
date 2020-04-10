@@ -12,7 +12,7 @@ export default props => {
 	if (error) return `Error! ${error.message}`
 
 	return (
-		<div style={{ backgroundColor: '#EF28AB', color: '#ffffff', width: '300px', padding: '20px' }}>
+		<div style={{ backgroundColor: '#6a007a', color: '#ffffff', width: '300px', padding: '20px' }}>
 			{data.users.map((user, i) => (
 				<div key={i}>
 					{user.nameFirst} {user.nameLast}
