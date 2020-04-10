@@ -2,9 +2,10 @@
 .env
 .DS_Store
 node_modules/
-# NPM
+# NPM/Yarn
 .npm
 npm-debug.*
+yarn.lock
 # Logs
 *.log
 logs/

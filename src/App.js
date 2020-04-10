@@ -1,5 +1,23 @@
-// React
+// Packages
 import React from 'react'
-// Add GraphQL queries and mutations: https://www.apollographql.com/docs/react/get-started/
+// Learn about queries and mutations: https://www.apollographql.com/docs/react/get-started/
+import { useQuery } from '@apollo/react-hooks'
+// GraphQL
+import USERS from './graphql/queries/users'
 
-export default props => <div>Hello world.</div>
+export default props => {
+	const { loading, error, data } = useQuery(USERS)
+
+	if (loading) return 'Loading...'
+	if (error) return `Error! ${error.message}`
+
+	return (
+		<div>
+			{data.users.map((user, i) => (
+				<div key={i}>
+					{user.nameFirst} {user.nameLast}
+				</div>
+			))}
+		</div>
+	)
+}
