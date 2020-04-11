@@ -8,19 +8,15 @@ import USERS from './graphql/queries/users'
 export default props => {
 	const { loading, error, data } = useQuery(USERS)
 
-	console.log({ loading, error, data })
-	const details = [
+	const box = [
 		loading ? { color: '#ffc40c', label: 'Loading...' } : null,
 		error ? { color: '#ff0000', label: `Error! ${error.message}` } : null,
-		data && data.users ? { color: '#6a007a', label: 'Data:' } : null,
-		{ color: '#eee', label: 'Unknown error' }
-	].find(x => x.color)
+		data ? { color: '#6a007a', label: 'Data:' } : null
+	].find(x => x.color)[0]
 
 	return (
-		<div
-			style={{ backgroundColor: details.color, color: '#ffffff', width: '300px', padding: '20px' }}
-		>
-			{details.label}
+		<div style={{ backgroundColor: box.color, color: '#ffffff', width: '300px', padding: '20px' }}>
+			{box.label}
 			{data &&
 				data.users.map((user, i) => (
 					<div key={i}>
