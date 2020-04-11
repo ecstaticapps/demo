@@ -8,8 +8,9 @@ import USERS from './graphql/queries/users'
 export default props => {
 	const { loading, error, data } = useQuery(USERS)
 
+	console.log({ loading, error, data })
 	const details = [
-		loading ? { color: '#ffff66', label: 'Loading...' } : null,
+		loading ? { color: '#ffc40c', label: 'Loading...' } : null,
 		error ? { color: '#ff0000', label: `Error! ${error.message}` } : null,
 		data ? { color: '#6a007a', label: 'Data:' } : null,
 		{ color: '#eee', label: 'Unknown error' }
