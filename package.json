@@ -1,7 +1,7 @@
 {
 	"name": "demo.app",
 	"version": "1.0.0",
-	"main": "src/index.js",
+	"main": "./src/index.js",
 	"author": "Martin Adams <heymartinadams@users.noreply.github.com>",
 	"license": "MIT",
 	"homepage": "https://www.ecstatic.com",

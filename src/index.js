@@ -1,6 +1,6 @@
 // React
 import React from 'react'
-import reactDom from 'react-dom'
+import { render } from 'react-dom'
 // Packages
 import { ApolloProvider } from 'react-apollo'
 import ApolloClient from 'apollo-boost'
@@ -17,7 +17,7 @@ const client = new ApolloClient({
 })
 
 // App
-reactDom.render(
+render(
 	<ApolloProvider client={client}>
 		<App />
 	</ApolloProvider>,
