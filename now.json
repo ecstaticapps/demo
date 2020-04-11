@@ -10,5 +10,16 @@
 				}
 			]
 		}
-	]
+	],
+	"env": {
+		"APP_AUTH": "@app_auth",
+		"DATABASE_URL": "@database_url"
+	},
+	"build": {
+		"env": {
+			"APP_AUTH": "@app_auth",
+			"DATABASE_URL": "@database_url",
+			"DEBUG": "prisma-client,engine"
+		}
+	}
 }
