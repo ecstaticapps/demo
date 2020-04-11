@@ -12,7 +12,7 @@ module.exports = async ({ email }) => {
 			exp: Math.floor(Date.now() / 1000) + 60 * 60,
 			userId: user.id
 		},
-		process.env.APP_AUTH
+		process.env.DEMO_APP_AUTH
 	)
 
 	return token

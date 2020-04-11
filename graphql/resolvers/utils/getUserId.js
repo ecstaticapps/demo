@@ -7,7 +7,7 @@ module.exports = ({ req }) => {
 			? req.headers.authorization.replace('Bearer ', '')
 			: null
 	if (token) {
-		const { userId } = jwt.verify(token, process.env.APP_AUTH)
+		const { userId } = jwt.verify(token, process.env.DEMO_APP_AUTH)
 		return userId
 	}
 	throw new Error('not_authenticated')

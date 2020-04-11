@@ -12,13 +12,13 @@
 		}
 	],
 	"env": {
-		"APP_AUTH": "@app_auth",
-		"DATABASE_URL": "@database_url"
+		"DEMO_APP_AUTH": "@demo_app_auth",
+		"DEMO_DATABASE_URL": "@demo_database_url"
 	},
 	"build": {
 		"env": {
-			"APP_AUTH": "@app_auth",
-			"DATABASE_URL": "@database_url",
+			"DEMO_APP_AUTH": "@demo_app_auth",
+			"DEMO_DATABASE_URL": "@demo_database_url",
 			"DEBUG": "prisma-client,engine"
 		}
 	}
