@@ -12,7 +12,7 @@ export default props => {
 	const details = [
 		loading ? { color: '#ffc40c', label: 'Loading...' } : null,
 		error ? { color: '#ff0000', label: `Error! ${error.message}` } : null,
-		data ? { color: '#6a007a', label: 'Data:' } : null,
+		data && data.users ? { color: '#6a007a', label: 'Data:' } : null,
 		{ color: '#eee', label: 'Unknown error' }
 	].find(x => x.color)
 
