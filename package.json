@@ -37,6 +37,7 @@
 		"graphql": "^15.0.0",
 		"nodemon": "^2.0.2",
 		"path": "^0.12.7",
+		"preact-cli": "^2.2.1",
 		"preact-cli-plugin-env-vars": "^1.2.1",
 		"react-scripts": "^3.4.1",
 		"webpack": "^4.42.1"
