@@ -1,6 +1,3 @@
-// React
-import React from 'react'
-import { render } from 'react-dom'
 // Packages
 import { ApolloProvider } from 'react-apollo'
 import ApolloClient from 'apollo-boost'
@@ -17,11 +14,12 @@ const client = new ApolloClient({
 })
 
 // App
-render(
-	<ApolloProvider client={client}>
-		<App />
-	</ApolloProvider>,
-	document.querySelector('demoapp')
-)
+export default () => {
+	return (
+		<ApolloProvider client={client}>
+			<App />
+		</ApolloProvider>
+	)
+}
 
 console.log('Welcome!')

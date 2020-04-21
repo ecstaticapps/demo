@@ -1,5 +1,3 @@
-// Packages
-import React from 'react'
 // Learn about queries and mutations: https://www.apollographql.com/docs/react/get-started/
 import { useQuery } from '@apollo/react-hooks'
 // GraphQL

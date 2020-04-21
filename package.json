@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"homepage": "https://www.ecstatic.com",
 	"repository": {
-		"url": "https://github.com/ecstaticapps/demo.app.git",
+		"url": "https://github.com/ecstaticapps/demo.git",
 		"type": "git"
 	},
 	"scripts": {
@@ -16,7 +16,7 @@
 		"prisma:studio": "prisma generate && prisma studio --experimental",
 		"prisma:gen": "prisma generate",
 		"prisma:intro": "prisma introspect",
-		"start": "now dev",
+		"start": "preact watch",
 		"postinstall": "prisma generate"
 	},
 	"dependencies": {
@@ -27,16 +27,19 @@
 		"jsonwebtoken": "^8.5.1",
 		"micro": "^9.3.4",
 		"micro-cors": "^0.1.1",
-		"react": "^16.12.0",
-		"react-apollo": "^3.1.4",
-		"react-dom": "^16.12.0"
+		"preact": "^10.4.1",
+		"react-apollo": "^3.1.4"
 	},
 	"devDependencies": {
 		"@prisma/cli": "^2.0.0-beta.2",
+		"copy-webpack-plugin": "^5.1.1",
 		"esm": "^3.2.25",
 		"graphql": "^15.0.0",
 		"nodemon": "^2.0.2",
-		"react-scripts": "^3.4.1"
+		"path": "^0.12.7",
+		"preact-cli-plugin-env-vars": "^1.2.1",
+		"react-scripts": "^3.4.1",
+		"webpack": "^4.42.1"
 	},
 	"browserslist": {
 		"production": [
